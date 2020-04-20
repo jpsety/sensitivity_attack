@@ -1,0 +1,149 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.22-s033_1, built Wed Apr 05 2017
+Options: -files src/ttlock.tcl -log locked/ttlock_c432_32.log -overwrite -execute {set top c432_32} -no_gui 
+Date:    Mon Apr 20 15:40:22 2020
+Host:    marinara.ece.local.cmu.edu (x86_64 w/Linux 3.10.0-1062.1.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2430 0 @ 2.20GHz 15360KB) (65755736KB)
+OS:      Red Hat Enterprise Linux Server release 7.7 (Maipo)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (9 seconds elapsed).
+
+Executing command "set top c432_32" ...
+Sourcing src/ttlock.tcl...
+
+  Message Summary for Library tutorial.lib:
+  *****************************************
+  Could not find an attribute in the library. [LBR-436]: 52
+  Missing threshold parameters. [LBR-519]: 1
+  Missing library level attribute. [LBR-516]: 9
+  *****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 5.000000, 25.000000) in library 'tutorial.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+  Setting attribute of root '/': 'library' = /afs/ece.cmu.edu/support/cds/share/image/usr/cds/genus-16.22.000/share/synth/tutorials/tech/tutorial.lib
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'c432' from file 'circuits/c432.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'c432'.
+Info: Checking for source rtl...
+Info: Check completed for source rtl...
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             9              9                                      elaborate
+Started checking and loading power intent for design c432...
+============================================================
+No power intent for design 'c432'.
+Completed checking and loading power intent for design c432 (runtime 0.00s).
+============================================================================
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+Warning : Port names affected by change_names do not automatically get updated in written out SV wrapper module. [CHNM-108]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_name  
+    need to be updated manually in the written out SV wrapper module.
+Disconnecting constant connected subport(s)/pin(s)
+No constant connected subport(s)/pin(s) were found
+Deleting unused port(s) & subport(s)
+  Deleting port 'port:DUT/N1'
+  Deleting port 'port:DUT/N4'
+  Deleting port 'port:DUT/N8'
+  Deleting port 'port:DUT/N11'
+  Deleting port 'port:DUT/N14'
+  Deleting port 'port:DUT/N17'
+  Deleting port 'port:DUT/N21'
+  Deleting port 'port:DUT/N24'
+  Deleting port 'port:DUT/N27'
+  Deleting port 'port:DUT/N30'
+  Deleting port 'port:DUT/N34'
+  Deleting port 'port:DUT/N37'
+  Deleting port 'port:DUT/N40'
+  Deleting port 'port:DUT/N43'
+  Deleting port 'port:DUT/N47'
+  Deleting port 'port:DUT/N50'
+  Deleting port 'port:DUT/N53'
+  Deleting port 'port:DUT/N56'
+  Deleting port 'port:DUT/N60'
+  Deleting port 'port:DUT/N63'
+  Deleting port 'port:DUT/N66'
+  Deleting port 'port:DUT/N69'
+  Deleting port 'port:DUT/N73'
+  Deleting port 'port:DUT/N76'
+  Deleting port 'port:DUT/N79'
+  Deleting port 'port:DUT/N82'
+  Deleting port 'port:DUT/N86'
+  Deleting port 'port:DUT/N89'
+  Deleting port 'port:DUT/N92'
+  Deleting port 'port:DUT/N95'
+  Deleting port 'port:DUT/N99'
+  Deleting port 'port:DUT/N102'
+  Deleting port 'port:DUT/N105'
+  Deleting port 'port:DUT/N108'
+  Deleting port 'port:DUT/N112'
+  Deleting port 'port:DUT/N115'
+  Deleting port 'port:DUT/N223'
+  Deleting port 'port:DUT/N329'
+  Deleting port 'port:DUT/N370'
+  Deleting port 'port:DUT/N421'
+  Deleting port 'port:DUT/N430'
+  Deleting port 'port:DUT/N431'
+  Deleting port 'port:DUT/N432'
+Done disconnecting & deleting constant connected, unloaded & undriven port(s) & subport(s)
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'DUT' to generic gates using 'medium' effort.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Info    : Optimizing RTL. [RTLOPT-1]
+        : Optimizing RTL in 'DUT' using 'medium' effort.
+Info    : Done optimizing RTL. [RTLOPT-2]
+        : Done optimizing RTL in 'DUT'.
+  Setting attribute of root '/': 'pbs_stage_start_elapsed_time' = 9
+  Setting attribute of root '/': 'pbs_stage_start_st_time' = 9
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'DUT' to generic gates.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             0              0                                      syn_generic
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'ttlock_wrapper_WKEY32_WINPUT36' from file 'src/ttlock_wrapper.sv'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'ttlock_wrapper_WKEY32_WINPUT36'.
+Info: Checking for source rtl...
+Info: Check completed for source rtl...
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             0              0                                      elaborate
+Warning : Directory was deleted. [TUI-57]
+        : Current directory does not exist anymore.  Resetting to root:.
+
+        : If an operation deletes the current directory (with the 'rm' command), the current-directory will subsequently be reset to the root directory.
+Started checking and loading power intent for design ttlock_wrapper_WKEY32_WINPUT36...
+======================================================================================
+No power intent for design 'ttlock_wrapper_WKEY32_WINPUT36'.
+Completed checking and loading power intent for design ttlock_wrapper_WKEY32_WINPUT36 (runtime 0.00s).
+======================================================================================================
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+Warning : Port names affected by change_names do not automatically get updated in written out SV wrapper module. [CHNM-108]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_name  
+    need to be updated manually in the written out SV wrapper module.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'DUTLock' to generic gates using 'medium' effort.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Info    : Optimizing RTL. [RTLOPT-1]
+        : Optimizing RTL in 'DUTLock' using 'medium' effort.
+Info    : Done optimizing RTL. [RTLOPT-2]
+        : Done optimizing RTL in 'DUTLock'.
+  Setting attribute of root '/': 'pbs_stage_start_elapsed_time' = 9
+  Setting attribute of root '/': 'pbs_stage_start_st_time' = 9
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'DUTLock' to generic gates.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             0              0                                      syn_generic_2
+Disconnecting constant connected subport(s)/pin(s)
+No constant connected subport(s)/pin(s) were found
+Deleting unused port(s) & subport(s)
+  Deleting port 'port_bus:DUTLock/key'
+Done disconnecting & deleting constant connected, unloaded & undriven port(s) & subport(s)
+Normal exit.
