@@ -89,7 +89,7 @@ python-dev-tools==2019.9.4
 python-sat==0.1.5.dev6
 pytz==2018.5
 pyupgrade==1.23.0
-PyYAML==5.1.2
+PyYAML==5.4
 readme-renderer==24.0
 requests==2.22.0
 requests-toolbelt==0.9.1
